@@ -1,24 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ticketmaster</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
+    <header class="px-[44px] py-[22px] text-white absolute top-0 left-0 w-full">
+        <div class="navbar-box flex items-center">
+            <div class="logo w-[10%]">
+                <a href="#" class="text-[25px]">ticketmaster</a>
+            </div>
+            <div class="nav-box w-[90%] flex justify-between">
+                <div class="left-nav">
+                    <ul>
+                        <li class="inline mr-[20px]"><a href="#">Concerts</a></li>
+                        <li class="inline mr-[20px]"><a href="#">Sports</a></li>
+                        <li class="inline mr-[20px]"><a href="#">Arts & Theater</a></li>
+                        <li class="inline mr-[20px]"><a href="#">Family</a></li>
+                        <li class="inline mr-[20px]"><a href="#">More</a></li>
+                    </ul>
+                </div>
+                <div class="right-nav">
+                    <ul>
+                        <li class="inline ml-[20px]"><a href="#">Sell</a></li>
+                        <li class="inline ml-[20px]"><a href="#">Gift Cards</a></li>
+                        <li class="inline ml-[20px]"><a href="#">Help</a></li>
+                        <li class="inline ml-[20px]"><a href="#">+1 9999999999</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner text-white py-[100px]">
+        <div class="container">
+            <h2 class="text-center text-[32px] font-bold mb-[10px]">Let's Make Live Happen</h2>
+            <p class="text-center mb-[20px]">Shop millions of live events and discover can't-miss concerts, games, theater and more.</p>
+            <div class="from flex items-center w-[70%] mx-auto relative">
+                <div class="city relative">
+                    <i class="fa-solid fa-location-dot absolute text-[#9ca3af] text-[19px] right-[10px] top-[50%] -translate-y-[50%]"></i>
+                    <input type="text" name="city" id="city" placeholder="City or Zip Code" class="px-[20px] py-[10px] text-[19px]">
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle rounded-0 px-[30px] py-[12px]" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Dates
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">All Dates</a></li>
+                      <li><a class="dropdown-item" href="#">This Weekend</a></li>
+                      <li><a class="dropdown-item" href="#">Date Range</a></li>
+                    </ul>
+                </div>
+                <div class="search w-[100%]">
+                    <input type="text" name="search" id="search" placeholder="Search for artists venues and event " class="w-[100%] px-[20px] py-[10px] text-[19px]">
+                </div>
+                <div class="btn absolute right-[-8px] top-[5px]">
+                    <a href="#" class="px-[20px] py-[10px] bg-[#026cdf] text-white">Search</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- see live section -->
     <section class="see-live-section my-[50px]">
         <div class="container max-w-[1296px] mx-auto">
             <div class="inner-box flex flex-wrap gap-[20px]">
                 <div class="front-img w-[68%] ">
-                    <img src="/image/see-live-img.jpg" alt="see-live-img" class="rounded-lg mb-[16px]">
+                    <img src="image/see-live-img.jpg" alt="see-live-img" class="rounded-lg mb-[16px]">
                     <div class="contanet flex justify-between items-center">
                         <div class="title-dis text-[#262626]">
                             <h2 class="text-[24px] mb-[10px]">Carrie Underwood</h2>
@@ -31,14 +95,14 @@
                 </div>
                 <div class="slid-img w-[30%]">
                     <div class="arced flex gap-[10px] mb-[20px]">
-                        <img src="/image/see-live-img-2.jpg" alt="see-live-img-2" class="w-[50%] rounded-lg">
+                        <img src="image/see-live-img-2.jpg" alt="see-live-img-2" class="w-[50%] rounded-lg">
                         <div class="dis w-[48%]">
                             <h2 class="text-[14px] text-[#026cdf] mb-[5px]">Arcade Fire</h2>
                             <p>Don't miss the chance to watch the show from amazing seats!</p>
                         </div>
                     </div>
                     <div class="arced flex gap-[10px]">
-                        <img src="/image/see-live-img-3.jpg" alt="see-live-img-2" class="w-[50%] rounded-lg">
+                        <img src="image/see-live-img-3.jpg" alt="see-live-img-2" class="w-[50%] rounded-lg">
                         <div class="dis w-[48%]">
                             <h2 class="text-[14px] text-[#026cdf] mb-[5px]">Arcade Fire</h2>
                             <p>Don't miss the chance to watch the show from amazing seats!</p>
@@ -56,28 +120,32 @@
                 <h2 class="text-[24px] mb-[32px]">Browse by Category</h2>
             </div>
             <div class="catagory-box flex gap-[14px] py-[12px] flex-wrap">
-                <div class="img-box relative w-[24%]">
-                    <img src="/image/catagory-img.jpg" alt="" class="rounded-[14px]">
+                <div class="img-box relative w-[24%] rounded-[14px]">
+                    <img src="image/catagory-img.jpg" alt="" class="">
                     <div class="name absolute bottom-[10px] left-[10px]">
-                        <a href="#" class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Concerts</a>
+                        <a href="#"
+                            class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Concerts</a>
                     </div>
                 </div>
-                <div class="img-box relative w-[24%]">
-                    <img src="/image/catagory-img-2.jpg" alt="" class="rounded-[14px]">
+                <div class="img-box relative w-[24%] rounded-[14px]">
+                    <img src="image/catagory-img-2.jpg" alt="" class="">
                     <div class="name  absolute bottom-[10px] left-[10px] ">
-                        <a href="#" class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Concerts</a>
+                        <a href="#"
+                            class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Concerts</a>
                     </div>
                 </div>
-                <div class="img-box relative w-[24%]">
-                    <img src="/image/catagory-img-3.jpg" alt="" class="rounded-[14px]">
+                <div class="img-box relative w-[24%] rounded-[14px]">
+                    <img src="image/catagory-img-3.jpg" alt="" class="">
                     <div class="name  absolute bottom-[10px] left-[10px]">
-                        <a href="#" class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Concerts</a>
+                        <a href="#"
+                            class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Concerts</a>
                     </div>
                 </div>
-                <div class="img-box relative w-[24%]">
-                    <img src="/image/catagory-img-4.jpg" alt="" class="rounded-[14px]">
+                <div class="img-box relative w-[24%] rounded-[14px]">
+                    <img src="image/catagory-img-4.jpg" alt="" class="">
                     <div class="name  absolute bottom-[10px] left-[10px]">
-                        <a href="#" class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Concerts</a>
+                        <a href="#"
+                            class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Concerts</a>
                     </div>
                 </div>
             </div>
@@ -85,67 +153,435 @@
     </section>
 
     <!-- top selling section -->
-    <section class="top-selling mt-[88px]">
+    <section class="top-selling mt-[88px] mb-[88px]">
         <div class="container max-w-[1296px] mx-auto">
             <div class="title-box">
                 <h2 class="text-[24px] mb-[32px]">Top Selling</h2>
             </div>
             <div class="concerts">
                 <div class="title flex justify-between pr-[16px] mb-[15px]">
-                    <h2 class="text-[20px]">Concerts</h2> 
-                    <a href="#">See All  Concert</a>
+                    <h2 class="text-[20px]">Concerts</h2>
+                    <a href="#">See All Concert</a>
                 </div>
                 <div class="catagory-box flex gap-[14px] py-[12px] flex-wrap">
-                    <div class="img-box relative w-[24%]">
-                        <img src="/image/concerts-img-1.webp" alt="" class="rounded-[14px]">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/concerts-img-1.webp" alt="" class="">
                         <div class="name absolute bottom-[10px] left-[10px]">
-                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Eagles<span class="block text-[15px]">17 Event</span></p>
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Eagles<span class="block text-[15px]">17 Event</span></p>
                         </div>
                     </div>
-                    <div class="img-box relative w-[24%]">
-                        <img src="/image/concerts-img-2.webp" alt="" class="rounded-[14px]">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/concerts-img-2.webp" alt="" class="">
                         <div class="name  absolute bottom-[10px] left-[10px] ">
-                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Shaina Twain<span class="block text-[15px]">57 Event</span></p>
-                        </div>  
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Shaina Twain<span class="block text-[15px]">57 Event</span></p>
+                        </div>
                     </div>
-                    <div class="img-box relative w-[24%]">
-                        <img src="/image/concerts-img-3.webp" alt="" class="rounded-[14px]">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/concerts-img-3.webp" alt="" class="">
                         <div class="name  absolute bottom-[10px] left-[10px]">
-                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Stray Kids<span class="block text-[15px]">8 Event</span></p>
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Stray Kids<span class="block text-[15px]">8 Event</span></p>
 
                         </div>
                     </div>
-                    <div class="img-box relative w-[24%]">
-                        <img src="/image/concerts-img-4.webp" alt="" class="rounded-[14px]">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/concerts-img-4.webp" alt="" class="">
                         <div class="name  absolute bottom-[10px] left-[10px]">
-                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">blink-182<span class="block text-[15px]">84 Event</span></p>
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                blink-182<span class="block text-[15px]">84 Event</span></p>
                         </div>
                     </div>
-                    <div class="img-box relative w-[24%]">
-                        <img src="/image/concerts-img-5.webp" alt="" class="rounded-[14px]">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/concerts-img-5.webp" alt="" class="">
                         <div class="name  absolute bottom-[10px] left-[10px]">
-                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Rod Wave<span class="block text-[15px]">28 Event</span></p>
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Rod
+                                Wave<span class="block text-[15px]">28 Event</span></p>
                         </div>
                     </div>
-                    <div class="img-box relative w-[24%]">
-                        <img src="/image/concerts-img-6.webp" alt="" class="rounded-[14px]">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/concerts-img-6.webp" alt="" class="">
                         <div class="name  absolute bottom-[10px] left-[10px]">
-                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Bruce Springsteen and The E Street Band<span class="block text-[15px]">58 Event</span></p>
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Bruce Springsteen and The E Street Band<span class="block text-[15px]">58 Event</span>
+                            </p>
                         </div>
                     </div>
-                    <div class="img-box relative w-[24%]">
-                        <img src="/image/concerts-img-7.webp" alt="" class="rounded-[14px]">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/concerts-img-7.webp" alt="" class="">
                         <div class="name  absolute bottom-[10px] left-[10px]">
-                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Ed Sheeran<span class="block text-[15px]">28 Event</span></p>
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Ed
+                                Sheeran<span class="block text-[15px]">28 Event</span></p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="sports mt-[48px]">
+                <div class="title flex justify-between pr-[16px] mb-[15px]">
+                    <h2 class="text-[20px]">Sports</h2>
+                    <a href="#">See All Sports</a>
+                </div>
+                <div class="catagory-box flex gap-[14px] py-[12px] flex-wrap">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/sport-img-1.webp" alt="" class="">
+                        <div class="name absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Miami Heat<span class="block text-[15px]">68 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/sport-img-2.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px] ">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Utah Jazz<span class="block text-[15px]">67 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/sport-img-3.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Memphis Grizzlies<span class="block text-[15px]">68 Event</span></p>
+
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/sport-img-4.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">San
+                                Antonio spurs<span class="block text-[15px]">64 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/sport-img-5.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Atlanta Hawks<span class="block text-[15px]">71 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/sport-img-6.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Indian Pacers<span class="block text-[15px]">70 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/sport-img-7.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Charlotte Hornets<span class="block text-[15px]">68 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/sport-img-8.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Dallas Cowboys<span class="block text-[15px]">8 Event</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-theater mt-[48px]">
+                <div class="title flex justify-between pr-[16px] mb-[15px]">
+                    <h2 class="text-[20px]">Arts & Theater</h2>
+                    <a href="#">See All Arts & Theater</a>
+                </div>
+                <div class="catagory-box flex gap-[14px] py-[12px] flex-wrap">
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/art-img-1.webp" alt="" class="">
+                        <div class="name absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Nick Cannon Presents: MTV Wild 'N Out Live<span class="block text-[15px]">1 Event</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/art-img-2.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px] ">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Louis C.K.<span class="block text-[15px]">27 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/art-img-3.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Nate Bargatze<span class="block text-[15px]">47 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/art-img-4.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">Jo
+                                Koy<span class="block text-[15px]">43 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/art-img-5.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Bert Kreischer<span class="block text-[15px]">62 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/art-img-6.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Bill Burr<span class="block text-[15px]">10 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/art-img-7.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Sebastian Maniscalco<span class="block text-[15px]">13 Event</span></p>
+                        </div>
+                    </div>
+                    <div class="img-box relative w-[24%] rounded-[14px]">
+                        <img src="image/art-img-8.webp" alt="" class="">
+                        <div class="name  absolute bottom-[10px] left-[10px]">
+                            <p class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                Jeff Dunham<span class="block text-[15px]">49 Event</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="family mt-[48px]">
+                <div class="title flex justify-between pr-[16px] mb-[15px]">
+                    <h2 class="text-[20px]">Family</h2>
+                    <a href="#">See All Family</a>
+                </div>
+                <div class="family flex gap-[10px]">
+                    <div class="catagory-box flex gap-[14px] py-[12px] flex-wrap w-[75%]">
+                        <div class="img-box relative w-[32%] rounded-[14px]">
+                            <img src="image/family-img-1.webp" alt="" class="">
+                            <div class="name absolute bottom-[10px] left-[10px]">
+                                <p
+                                    class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                    Disney On Ice presents Find Your Hero<span class="block text-[15px]">139
+                                        Event</span></p>
+                            </div>
+                        </div>
+                        <div class="img-box relative w-[32%] rounded-[14px]">
+                            <img src="image/family-img-2.webp" alt="" class="">
+                            <div class="name  absolute bottom-[10px] left-[10px] ">
+                                <p
+                                    class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                    Disney On Ice presents Into the Magic<span class="block text-[15px]">159
+                                        Event</span></p>
+                            </div>
+                        </div>
+                        <div class="img-box relative w-[32%] rounded-[14px]">
+                            <img src="image/family-img-3.webp" alt="" class="">
+                            <div class="name  absolute bottom-[10px] left-[10px]">
+                                <p
+                                    class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                    San Antonio Stock Show and Rodeo<span class="block text-[15px]">23 Event</span></p>
+                            </div>
+                        </div>
+                        <div class="img-box relative w-[32%] rounded-[14px]">
+                            <img src="image/family-img-4.webp" alt="" class="">
+                            <div class="name  absolute bottom-[10px] left-[10px]">
+                                <p
+                                    class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                    Disney On Ice presents Frozen & Encanto<span class="block text-[15px]">181
+                                        Event</span></p>
+                            </div>
+                        </div>
+                        <div class="img-box relative w-[32%] rounded-[14px]">
+                            <img src="image/family-img-5.webp" alt="" class="">
+                            <div class="name  absolute bottom-[10px] left-[10px]">
+                                <p
+                                    class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                    Disney On Ice presents Road Trip Adventures<span class="block text-[15px]">139
+                                        Event</span></p>
+                            </div>
+                        </div>
+                        <div class="img-box relative w-[32%] rounded-[14px]">
+                            <img src="image/family-img-6.webp" alt="" class="">
+                            <div class="name  absolute bottom-[10px] left-[10px]">
+                                <p
+                                    class="block px-[20px] py-[10px] bg-[#262626a6] rounded-[10px] text-[700] text-white">
+                                    Disney On Ice presents Let's Celebrate<span class="block text-[15px]">118
+                                        Event</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box w-[25%] py-[12px]">
+                        <div class="family-box bg-[#f6f6f6] h-full rounded-[12px]">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event mt-[48px]">
+                <div class="title flex justify-between pr-[16px] mb-[15px]">
+                    <h2 class="text-[20px]">Discover More Events</h2>
+                    <a href="#">Things to Do</a>
+                </div>
+                <div class="owl-carousel" id="event-slider">
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-1.jpg" alt="" class="rounded-[5px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">NFL</h2>
+                                <p class="text-[14px]" >Explore NFL ticket options from the Official Ticket Exchange of the NFL.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-2.jpg" alt=""class="rounded-[10px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">NBA</h2>
+                                <p class="text-[14px]">Find great tickets for your favorite NBA teams for must-see games.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-3.jpg" alt="" class="rounded-[5px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">NHL</h2>
+                                <p class="text-[14px]">Get verified tickets to watch your favorite NHL team take the ice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-4.jpg" alt="" class="rounded-[5px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">MLB</h2>
+                                <p class="text-[14px]">Get Major League Baseball tickets for your favorite team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-5.jpg" alt="" class="rounded-[5px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">MLS</h2>
+                                <p class="text-[14px]">Get Major League Soccer tickets for your favorite team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-6.jpg" alt="" class="rounded-[5px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">Las Vegas</h2>
+                                <p class="text-[14px]">Exploring what to see and do in Las Vegas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-5.jpg" alt="" class="rounded-[5px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">Arcade Fire</h2>
+                                <p class="text-[14px]">Don't miss the chance to watch the show from amazing seats!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-5.jpg" alt="" class="rounded-[5px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">Arcade Fire</h2>
+                                <p class="text-[14px]">Don't miss the chance to watch the show from amazing seats!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="event-box ml-[20px]">
+                            <img src="image/more-event-5.jpg" alt="" class="rounded-[5px] mb-[10px]">
+                            <div class="dis">
+                                <h2 class="text-[14px] text-[#026cdf] mb-[5px]">Arcade Fire</h2>
+                                <p class="text-[14px]">Don't miss the chance to watch the show from amazing seats!</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
         </div>
     </section>
+    
+
+    <!-- footer -->
+    <footer class="bg-[#1f262d]">
+        <div class="container max-w-[1296px] mx-auto border-b border-[#ffffff50]">
+            <div class="flex justify-between py-[48px] w-[80%] ">
+                <div class="footer-box">
+                    <ul class="text-white">
+                        <li class="mb-[12px]"><h2 class="text-[16px] capitalize font-samibold">Helpful Links</h2></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Help/FAQ</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Sell</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">My Account</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Contact Us</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Gift Cards</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Refunds and Exchanges</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">N.Y. Registered Brokers</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Do Not Sell My Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <ul class="text-white">
+                        <li class="mb-[12px]"><h2 class="text-[16px] capitalize font-samibold">Our Network</h2></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Live Nation</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">House of Blues</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Front Gate Tickets</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">TicketWeb</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">universe</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">NFL</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">NBA</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">NHL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <ul class="text-white">
+                        <li class="mb-[12px]"><h2 class="text-[16px] capitalize font-samibold">About Us</h2></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Who We Are</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Ticketmaster Blog</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Ticketing 101</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Privacy Policy</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Careers</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Ticket Your Event</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <ul class="text-white">
+                        <li class="mb-[12px]"><h2 class="text-[16px] capitalize font-samibold">Friends & Partners</h2></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">American Express</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">Allianz</a></li>
+                        <li class="mb-[12px]"><a href="#" class="text-[14px]">AWS</a></li>
+                        <li class="mb-[12px]"><h2 class="text-[16px] capitalize font-samibold">Get Our App</h2></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container max-w-[1296px] mx-auto">
+            <div class="footer-line">
+                <div class="pt-[32px] pb-[131px]">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
-    <script src="script/jquery-1.9.1.min.js"></script>
-    <script src="script/owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/884533464b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

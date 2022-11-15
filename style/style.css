@@ -2,3 +2,15 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+.img-box {
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    scale: 1;
+}
+.img-box:hover img {
+    scale: 1.1;
+    transition: all .5s ease-in-out;
+}
+.banner{
+    background-image: url(../image/banner-img.jpg);
+}
