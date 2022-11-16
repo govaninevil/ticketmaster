@@ -14,3 +14,15 @@
 .banner{
     background-image: url(../image/banner-img.jpg);
 }
+p{
+    margin-bottom: 0px;
+}
+.art-theater .slick-slide{
+    margin: 0 5px;
+}
+#rtl-slider .slick-slide{
+    transform: rotate(180deg);
+}
+#rtl-slider{
+    transform: rotate(180deg);
+}
