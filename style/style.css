@@ -12,8 +12,13 @@
     transition: all .5s ease-in-out;
 }
 .banner{
-    background-image: url(../image/banner-img.jpg);
+    /* background-image: url(../image/banner-img.jpg); */
 }
+header{transition: all .5s ease-in-out;}
+header.small{position: sticky; top: 0px; left: 0px; background-color: #ffffff; z-index: 10; transition: all .5s ease-in-out;}
+.resp-tab-content{border: none;}
+.talking .img-bar .box{margin-left: -20px; transition: all .5s ease-in-out;}
+.talking:hover .img-bar .box{margin-left: 0px; transition: all .5s ease-in-out;}
 p{
     margin-bottom: 0px;
 }
@@ -22,6 +27,10 @@ p{
 }
 #rtl-slider .slick-slide{
     transform: rotate(180deg);
+}
+
+li.resp-tab-item.hor_2 {
+    font-size: 16px;
 }
 #rtl-slider{
     transform: rotate(180deg);
