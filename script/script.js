@@ -1,4 +1,11 @@
 $(document).on('ready', function () {
+
+
+  $("#mobile").on("click", function () {
+    $("body").toggleClass("mobile");
+  });
+
+
   $(window).scroll(function () {
     if ($(this).scrollTop() > 150) {
       $('header').addClass("small");
@@ -12,7 +19,7 @@ $(document).on('ready', function () {
     dots: false,
     margin: 10,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
@@ -22,23 +29,30 @@ $(document).on('ready', function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 8,
+          slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
+        breakpoint:850,
+        settings: {
+          slidesToScroll:1,
+          slidesToShow: 3,
+        }
+      },
+      {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 1000
@@ -64,7 +78,7 @@ $(document).on('ready', function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -73,14 +87,14 @@ $(document).on('ready', function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 1000
@@ -105,7 +119,7 @@ $(document).on('ready', function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -114,14 +128,14 @@ $(document).on('ready', function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 1000
@@ -135,10 +149,11 @@ $(document).on('ready', function () {
 
   $('#banner-slide').slick({
     dots: false,
+    arrows: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     cssEase: 'linear',
     responsive: [
       {

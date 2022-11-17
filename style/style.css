@@ -15,12 +15,14 @@
     /* background-image: url(../image/banner-img.jpg); */
 }
 header{transition: all .5s ease-in-out;}
-header.small{position: sticky; top: 0px; left: 0px; background-color: #ffffff; z-index: 10; transition: all .5s ease-in-out;}
+header.small{position: fixed; top: 0px; left: 0px; background-color: #ffffff; z-index: 10; transition: all .5s ease-in-out;}
 .resp-tab-content{border: none;}
 .talking .img-bar .box{margin-left: -20px; transition: all .5s ease-in-out;}
+.talking .img-bar:first-child .box{margin-left: 0px !important;}
 .talking:hover .img-bar .box{margin-left: 0px; transition: all .5s ease-in-out;}
 p{
     margin-bottom: 0px;
+    text-align: justify !important;
 }
 .art-theater .slick-slide{
     margin: 0 5px;
@@ -35,3 +37,101 @@ li.resp-tab-item.hor_2 {
 #rtl-slider{
     transform: rotate(180deg);
 }
+.img-box p{text-align: left !important;}
+.slick-dots{display: none !important;}
+.slick-arrow{display: none !important;}
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width:1919px) {}
+@media screen and (max-width:1599px) {
+    .container{width: 85% !important;}
+    .logo{width: 15% !important;}
+}
+@media screen and (max-width:1365px) {
+    .concerts .img-box{width: 23% !important;}
+}
+@media screen and (max-width:1280px) {
+    .logo{width: 17% !important;}
+    .logo a{font-size: 21px;}
+    .left-nav ul li a,.right-nav ul li a{font-size: 14px !important;}
+    .banner .title h2{font-size: 30px;}
+    .banner .title p{font-size: 15px;}
+    .banner input{font-size: 15px;}
+    .banner h2.title{font-size: 15px;}
+    .slider-box .btn a{padding: 14px;}
+    .see-live-section .front-img{width: 67%;}
+    .front-img .contanet .title-dis{ width: 70% !important;}
+    .arced{flex-wrap: wrap;}
+    .arced img,.arced .dis{width: 100%;}
+    .concerts .img-box{width: 32% !important;}
+    .family .box{display: none;}
+    .family .catagory-box{width: 100%;}
+    p{font-size: 12px !important;}
+    footer .container .flex{width: 100%;}
+    .footer-box ul li{margin-bottom: 8px;}
+}
+@media screen and (max-width:1024px) {
+    .navbar-box{position: relative;display: block !important;}
+    .menu-box{display: block !important; position: absolute; top: 7px; right: 20px;}
+    .menu-box span{height: 4px;}
+    .nav-box{display: none !important;margin-top: 30px;}
+    .mobile{overflow: hidden;height: 100vh;position: sticky;top: 0px;left: 0px;}
+    header{position: sticky; top: 0px; left: 0px; background-color: #ffffff; z-index: 99;}
+    .mobile .nav-box{display: block !important;}
+    .mobile header{height: 100vh;}
+    .nav-box ul li{display: block !important;}
+    .nav-box ul{margin-bottom: 0px;}
+    .nav-box ul li{margin: 0px 0px 10px 0px !important; }
+    .mobile .menu-box span:first-child{transform: rotate(45deg);position: absolute;top: 9px;transition: all ease-in-out .5s;}
+    .mobile .menu-box span:last-child{transform: rotate(135deg);transition: all ease-in-out .5s}
+    .mobile .menu-box span:nth-child(2){opacity: 0;transition: all ease-in-out .5s}
+    .menu-box span{transition: all ease-in-out .5s}
+    .container{max-width: 690px !important; width: 100% !important;}
+    .banner .ineer-box{flex-wrap: wrap; flex-direction: column-reverse;}
+    .banner .ineer-box .left{width: 100%;}
+    .banner .ineer-box .right{width: 70%; margin: 30px auto;}
+    .front-img{width: 100% !important;}
+    .slid-img{width: 100% !important; justify-content: flex-start !important;}
+    h2.resp-accordion.hor_2{display: none;}
+    ul.resp-tabs-list{display: block !important;}
+    .gap-\[14px\]{gap: 12px;}  
+    .concerts .img-box{width: 48% !important;}
+    .cantent p{width: 85% !important;}
+    .footer-line .pt-\[32px\]{padding-bottom: 40px !important;}
+}   
+@media screen and (max-width:750px) {
+    .container{width: 90% !important;}
+    .see-live-section{margin: 40px auto !important;}
+    .top-selling{margin: 40px auto !important;}
+    .top-selling .title-box h2{margin-bottom: 16px !important;}
+    .art-theater{margin-top: 0px !important;}
+    .ineer-box .left{padding-right: 0px;}
+    footer .inner-box{flex-wrap: wrap;}
+    .footer-box{width: 50%;margin-bottom: 15px;}
+    .footer-box ul li a{font-size: 12px !important;}   
+    .bottom-line{display: block !important;}
+    .bottom-line .left a h2{font-size: 23px;}
+    .bottom-line .right{text-align: center;}
+}
+@media screen and (max-width:640px) {
+    .banner .ineer-box .right{width: 100%;}
+    .see-live-section .contanet{display: block;}
+    .front-img .contanet .title-dis{width: 100% !important;}
+    .see-live-section .contanet .btn a{display: block;margin-top: 10px;}
+    .concerts .img-box{width: 100% !important;}
+    .contact-us .inner-box{flex-wrap: wrap  !important; flex-direction: column-reverse;}
+    .contact-us .inner-box .right{margin-bottom: 20px;}
+    .cantent p{width: 100% !important;}
+    .download-btn a{width: 50%;}
+    .bottom-line .left p{display: block;text-align: center !important;margin:10px 0px;}
+    .bottom-line .left{text-align: center;}
+    .footer-box{width: 100%;}
+    .title{display: block;}
+}
+@media screen and (max-width:420px) {}
