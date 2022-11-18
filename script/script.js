@@ -171,6 +171,31 @@ $(document).on('ready', function () {
     ]
   });
 
+
+    $('#slides').slick({
+      dots: false,
+      arrows: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 0,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+
   // tabbing
   $('#concerts').easyResponsiveTabs({
     type: 'default', //Types: default, vertical, accordion
