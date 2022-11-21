@@ -51,7 +51,10 @@ input:focus-visible{outline:none !important;}
 .contact-us-slider .slick-next.slick-arrow{display: block !important; position: absolute; top: -11%; left: 85% ;}
 .slick-arrow:before{font-size: 34px !important; color: #0d6efd;}
 
-
+/* terms & condition */
+.terms a{
+    color: #0d6efd !important;
+}
 
 /* responsive */
 @media screen and (max-width:1919px) {}
@@ -60,6 +63,7 @@ input:focus-visible{outline:none !important;}
     .logo{width: 15% !important;}
 }
 @media screen and (max-width:1365px) {
+    .contact-slider{width: 33% !important;}
     .concerts .img-box{width: 23% !important;}
 }
 @media screen and (max-width:1280px) {
@@ -81,6 +85,12 @@ input:focus-visible{outline:none !important;}
     p{font-size: 12px !important;}
     footer .container .flex{width: 100%;}
     .footer-box ul li{margin-bottom: 8px;}
+    .banner-about-us{background-position-y: 50%;}
+    .contact-us-slider .img-box-1,.contact-us-slider .img-box-2,.contact-us-slider .img-box-3{display: none !important;}
+    .contact-slider{width: 50% !important; position: static !important; margin: 0 auto !important;}
+    .get-in-touch .left-box{padding-right: 10% !important;}
+    .get-in-touch .right-box{width: 34% !important;}
+    .contact-us-slider .inner-box{height: auto !important;}
 }
 @media screen and (max-width:1024px) {
     .navbar-box{position: relative;display: block !important;}
@@ -112,7 +122,13 @@ input:focus-visible{outline:none !important;}
     .footer-line .pt-\[32px\]{padding-bottom: 40px !important;}
     .mobile-number{display: block; position: absolute; right: 90px; transform: translateY(-50%);top: 53%;}
     .mobile .mobile-number{display: none !important;}
-    
+    .banner-about-us .banner-title h2{font-size: 49px;}
+
+    .get-in-touch .container{flex-direction: column !important;}
+    .get-in-touch .left-box{width: 100% !important; padding-right: 0px !important; margin-bottom: 20px;}
+    .get-in-touch .right-box{width: 50% !important; margin: 0 auto;}
+    .contact-slider{width: 70% !important;}
+    .get-in-touch .left-box .title h2{font-size: 33px !important;}
 }   
 @media screen and (max-width:750px) {
     .container{width: 90% !important;}
@@ -127,6 +143,7 @@ input:focus-visible{outline:none !important;}
     .bottom-line{display: block !important;}
     .bottom-line .left a h2{font-size: 23px;}
     .bottom-line .right{text-align: center;}
+    .get-in-touch .right-box{width: 52% !important;}
 }
 @media screen and (max-width:640px) {
     .banner .ineer-box .right{width: 100%;}
@@ -142,6 +159,11 @@ input:focus-visible{outline:none !important;}
     .bottom-line .left{text-align: center;}
     .footer-box{width: 100%;}
     .title{display: block;}
+    .banner-about-us .banner-title h2 {font-size: 29px;}
+    .banner-about-us .container{padding: 60px 0px !important;}
+    .terms h2{font-size: 26px;}
+    .get-in-touch .right-box {width: 100% !important;}
+    .contact-slider {width: 100% !important;}
 }
 @media screen and (max-width:420px) {
     .logo a {font-size: 16px;}
